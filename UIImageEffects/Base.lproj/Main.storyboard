@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="APLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9vh-EH-bsi"/>
+                        <viewControllerLayoutGuide type="bottom" id="5qa-9H-Atj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NdV-Zd-9qD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdY-P1-iWP">
+                                <rect key="frame" x="20" y="639" width="335" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-P4-Y5f">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="nextEffect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mFx-se-obZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="NdV-Zd-9qD" firstAttribute="bottom" secondItem="5qa-9H-Atj" secondAttribute="top" id="RoR-V3-WMV"/>
+                            <constraint firstItem="eQm-P4-Y5f" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="SR6-Dm-EQj"/>
+                            <constraint firstItem="eQm-P4-Y5f" firstAttribute="top" secondItem="9vh-EH-bsi" secondAttribute="bottom" id="WvR-Kr-zM0"/>
+                            <constraint firstItem="NdV-Zd-9qD" firstAttribute="centerX" secondItem="CdY-P1-iWP" secondAttribute="centerX" id="bPA-Mx-C27"/>
+                            <constraint firstAttribute="trailing" secondItem="NdV-Zd-9qD" secondAttribute="trailing" id="iHG-FP-10b"/>
+                            <constraint firstItem="NdV-Zd-9qD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jiU-BU-ZnP"/>
+                            <constraint firstItem="CdY-P1-iWP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="nga-cg-VPM"/>
+                            <constraint firstItem="5qa-9H-Atj" firstAttribute="top" secondItem="CdY-P1-iWP" secondAttribute="bottom" constant="8" symbolic="YES" id="p6O-cN-U9K"/>
+                            <constraint firstItem="NdV-Zd-9qD" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="qIw-vJ-mHK"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="effectLabel" destination="CdY-P1-iWP" id="5T9-Cf-EZ2"/>
+                        <outlet property="imageView" destination="NdV-Zd-9qD" id="v15-Df-aEM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="34"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
